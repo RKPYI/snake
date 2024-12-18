@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="menu">
+        <h1>Snake Game</h1>
+        <div id="button">
+        <button id="startGameBtn">Start Game</button>
+        <button id="viewLeaderboardBtn">View Leaderboard</button>
+        <button id="difficultyBtn">Difficulty</button>
+        </div>
+    </div>
+
+    <div id="gameContainer" style="display: none;">
+        <div id="scoreText">0</div>
+        <canvas id="gameBoard" width="500" height="500"></canvas>
+        <button id="mainMenuBtn">Back To Menu</button>
+    </div>
+
+    <div id="difficultyModal" style="display: none;">
+        <h3>Select Difficulty</h3>
+        <button id="easyBtn">Easy (3 Pellets)</button>
+        <button id="normalBtn">Normal (2 Pellets)</button>
+        <button id="hardBtn">Hard (1 Pellet)</button>
+    </div>
+
+    <div id="leaderboard" style="display: none;">
+        <h2>High Scores</h2>
+        <ul id="scoreList"></ul>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
