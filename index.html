@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>RDK</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="snake.png" type="image/x-icon">
 </head>
 <body>
 
     <div id="menu">
-        <h1>Snake Game</h1>
+        <h1>Game Uler 🐍</h1>
         <div id="button">
         <button id="startGameBtn">Start Game</button>
         <button id="viewLeaderboardBtn">View Leaderboard</button>
@@ -21,6 +22,14 @@
         <div id="scoreText">0</div>
         <canvas id="gameBoard" width="500" height="500"></canvas>
         <button id="mainMenuBtn">Back To Menu</button>
+        <div id="controls">
+            <button id="upBtn">▲</button>
+            <div id="middleControls">
+                <button id="leftBtn">◀</button>
+                <button id="rightBtn">▶</button>
+            </div>
+            <button id="downBtn">▼</button>
+        </div>
     </div>
 
     <div id="difficultyModal" style="display: none;">
@@ -35,6 +44,6 @@
         <ul id="scoreList"></ul>
     </div>
 
-    <script src="./index.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
